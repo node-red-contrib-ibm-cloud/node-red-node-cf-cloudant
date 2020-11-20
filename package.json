@@ -1,43 +1,42 @@
 {
-  "name": "node-red-node-cf-cloudant",
-  "version": "0.2.17",
-  "description": "A Node-RED node to access Cloudant and couchdb databases",
-  "dependencies": {
-    "cfenv": "1.0.0",
-    "cloudant": "1.4.*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lgfa29/node-red-node-cf-cloudant.git"
-  },
-  "license": "Apache-2.0",
-  "keywords": [
-    "node-red",
-    "cloudant",
-    "couchdb",
-    "bluemix"
-  ],
-  "node-red": {
-    "nodes": {
-      "cloudant-cf": "77-cloudant-cf.js"
-    }
-  },
-  "author": {
-    "name": "Luiz Gustavo Ferraz Aoqui",
-    "email": "laoqui@ca.ibm.com"
-  },
-  "contributors": [
-    {
-      "name": "Túlio Pascoal"
+    "name": "node-red-node-cf-cloudant",
+    "version": "0.3.0",
+    "description": "A Node-RED node to access Cloudant and couchdb databases, supports views, query and bulk operations.",
+    "dependencies": {
+        "@cloudant/cloudant": "^2.3.0",
+        "cfenv": "1.0.x"
     },
-    {
-      "name": "Igor Leão"
-    }
-  ],
-  "maintainers": [
-    {
-      "name": "luiz_aoqui",
-      "email": "laoqui@ca.ibm.com"
-    }
-  ]
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/node-red-contrib-ibm-cloud/node-red-node-cf-cloudant.git"
+    },
+    "license": "Apache-2.0",
+    "keywords": [
+        "node-red",
+        "cloudant",
+        "couchdb"
+    ],
+    "node-red": {
+        "nodes": {
+            "cloudant": "cloudant.js"
+        }
+    },
+    "author": {
+        "name": "Adam Hammond",
+        "email": "adam_hammond@uk.ibm.com"
+    },
+    "contributors": [
+        {
+            "name": "Túlio Pascoal"
+        },
+        {
+            "name": "Igor Leão"
+        },
+        {
+            "name": "Luiz Gustavo Ferraz Aoqui"
+        },
+        {
+            "name": "Austin Chang"
+        }
+    ]
 }
